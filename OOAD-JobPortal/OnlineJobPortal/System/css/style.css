@@ -168,7 +168,7 @@ ul.nav-mini li a {
 
 ul.nav-mini.sign-in {
     margin-top: 1px;
-    margin-left: 150px;
+    margin-right: -55%;
     /* them margin-left */
 }
 
