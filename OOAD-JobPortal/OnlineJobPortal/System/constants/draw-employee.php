@@ -5,7 +5,8 @@
 <h4 class="modal-title text-center">Create your account for free</h4>
 </div>
 
-<div class="modal-body">
+<!-- <div class="modal-body"> -->
+<div class="modal-body-new">
 																
 <div class="row gap-20">
 											
@@ -15,9 +16,12 @@
 												
 <div class="col-sm-12 col-md-12">
 
-<div class="form-group"> 
-<label>Full Name</label>
-<input class="form-control" placeholder="Enter your full name" name="fname" required type="text"> 
+<!-- <div class="form-group">  -->
+<div class="inputBox">
+<!-- <label>Full Name</label> -->
+<!-- <input class="form-control" placeholder="Enter your full name" name="fname" required type="text">  -->
+<input  name="fname" required type="text">
+<span>Full name</span>
 </div>
 												
 </div>
