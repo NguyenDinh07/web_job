@@ -5901,7 +5901,7 @@ ul.static-page-menu li.active a {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 17px 11px 6px;
+    padding: 9px 11px 6px;
     pointer-events: none;
     font-size: 1em;
     color: #8f8f8f;
@@ -5917,7 +5917,7 @@ ul.static-page-menu li.active a {
 .input-wrapper input:focus ~ span
 {
     color: #45f3ff;
-    transform: translateX(-5px) translateY(-35px);
+    transform: translateX(-5px) translateY(-30px);
 	font-size: 0.75em;
     background-color: #1c1c1c;
     background: transparent;

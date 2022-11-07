@@ -77,7 +77,7 @@
 <button  onclick="return val();" type="submit" name="reg_mode" class="btn btn-primary mt-5">Register</button>
 <div class="sign-in_by-register">
         <p> Already have an account? 
-            <a href="http://localhost/web_job/OOAD-JobPortal/OnlineJobPortal/System/login.php">
+            <a href="login.php">
                 Sign in</a>
         </p>
     </div>	
