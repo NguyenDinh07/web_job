@@ -4,6 +4,8 @@
 include 'constants/settings.php'; 
 include 'constants/check-login.php';
 ?>
+
+<link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet">
 <head>
 
 	<meta charset="utf-8">

@@ -66,9 +66,7 @@ $page = 1;
 	<link rel="stylesheet" href="../icons/flaticon-thick-icons/flaticon-thick.css">
 	<link rel="stylesheet" href="../icons/flaticon-ventures/flaticon-ventures.css">
 
-
-	<link href="../css/style.css" rel="stylesheet">
-
+	<link href="../css/style.css?v=<?php echo time(); ?>" rel="stylesheet">
 	
 </head>
 
@@ -86,64 +84,105 @@ $page = 1;
 
 	<div class="container-wrapper">
 
-		<header id="header">
+	<header id="header">
 
-			<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
+<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
 
-				<div class="container">
+	<div class="container">
+		
+		<div class="logo-wrapper">
+			<div class="logo">
+				<a href="./">
+					<img class="max-width-30" src="..\images\findjobtransnoname.png"  alt="logo">
+				</a>
+			</div>
+		</div>
+		
+		<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+		
+			<ul class="nav navbar-nav" id="responsive-menu">
+				<!-- 						
+				<li>
+				
+					<a href="./">HOME</a>
 					
-					<div class="logo-wrapper">
-						<div class="logo">
-							<a href="../"><img src="../images/logo.png" alt="Logo" /></a>
-						</div>
-					</div>
-					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
-					
-						<ul class="nav navbar-nav" id="responsive-menu">
-						
-							<li>
-							
-								<a href="../">Home</a>
-								
-							</li>
-							
-							<li>
-								<a href="../job-list.php">Job List</a>
-
-							</li>
-							
-							<li>
-								<a href="../employers.php">Employers</a>
-							</li>
-							
-							<li>
-								<a href="../employees.php">Employees</a>
-							</li>
-							
-							<li>
-								<a href="../contact.php">Contact Us</a>
-							</li>
-
-						</ul>
+				</li> -->
 				
-					</div>
+				<li>
+					<a href="job-list.php">FIND JOBS</a>
 
-					<div class="nav-mini-wrapper">
-						<ul class="nav-mini sign-in">
-							<li><a href="../logout.php">logout</a></li>
-							<li><a href="./">Profile</a></li>
-						</ul>
-					</div>
+				</li>
 				
-				</div>
-				
-				<div id="slicknav-mobile"></div>
-				
-			</nav>
-
+				<li>
+					<a href="employers.php">COMPANIES</a>
+				</li>
 			
-		</header>
+				
+				<li>
+					<a href="contact.php">FEED BACK</a>
+				</li>
+
+			</ul>
+	
+		</div>
+
+		<div class="nav-mini-wrapper">
+			<ul class="nav-mini sign-in mr-212"> <!-- xoa nav-mini -->
+			<?php
+			if ($user_online == true) {
+			print '
+				<li><a href="logout.php">Logout</a></li>
+				<li><a href="'.$myrole.'">Profile</a></li>';
+			}else{
+			print '
+				<li><a href="login.php">Login</a></li>
+				<li><a data-toggle="modal" href="register.php?p=Employee">Register</a></li>
+				<li><a data-toggle="modal" href="register.php?p=Employer">Register as employer</a></li>';
+				// chinh href
+			}
+			
+			?>
+
+			</ul>
+		</div>
+	
+	</div>
+	
+	<div id="slicknav-mobile"></div>
+	
+</nav>
+
+
+<!-- <div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
+
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h4 class="modal-title text-center">Create your account for free</h4>
+	</div>
+	
+	<div class="modal-body">
+	
+		<div class="row gap-20">
+		
+			<div class="col-sm-6 col-md-6">
+				<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Employer</a>
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Employee</a>
+			</div>
+
+		</div>
+	
+	</div>
+	
+	<div class="modal-footer text-center">
+		<button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Close</button>
+	</div>
+	
+</div> -->
+
+
+</header>
 
 		<div class="main-wrapper">
 
@@ -152,7 +191,7 @@ $page = 1;
 				<div class="container">
 				
 					<ol class="breadcrumb-list booking-step">
-						<li><a href="../">Nightingale Jobs</a></li>
+						<li><a href="../">Home</a></li>
 						<li><span>Other Attachments</span></li>
 					</ol>
 					
@@ -202,10 +241,10 @@ $page = 1;
 										<li>
 											<a href="./"><i class="fa fa-user"></i> Profile</a>
 										</li>
-										<li class="">
+										<!-- <li class="">
 										<a href="change-password.php"><i class="fa fa-key"></i> Change Password</a>
-										</li>
-										<li  >
+										</li> -->
+										<!-- <li  >
 											<a href="qualifications.php"><i class="fa fa-trophy"></i> Professional Qualifications</a>
 										</li>
 										<li>
@@ -228,7 +267,7 @@ $page = 1;
 										</li>
 										<li>
 											<a href="applied-jobs.php"><i class="fa fa-bookmark"></i> Applied Jobs</a>
-										</li>
+										</li> -->
 										<li>
 											<a href="../logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 										</li>

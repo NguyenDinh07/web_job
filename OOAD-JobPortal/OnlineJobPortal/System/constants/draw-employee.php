@@ -29,7 +29,7 @@
 <div class="col-sm-12 col-md-12">
 
 <div class="input-wrapper"> 
-    <input class="form-control_register" type="text" name="Email" required="required"> 
+    <input class="form-control_register" type="text" name="lname" required="required"> 
     <span>Email</span>
     <i></i>
 </div>
@@ -39,7 +39,7 @@
 <div class="col-sm-12 col-md-12">
 
 <div class="input-wrapper"> 
-    <input class="form-control_register" type="text"  required="required"> 
+    <input class="form-control_register" type="text" name="email" required="required"> 
     <span>UserName</span>
     <i></i>
 </div>

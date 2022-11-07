@@ -175,7 +175,7 @@ header("location:../");
 									
 									<div class="admin-user-action text-center">
 									
-										<a target="_blank" href="my_cv" class="btn btn-primary btn-sm btn-inverse">View my CV</a>
+										<a target="_blank" href="attachments.php" class="btn btn-primary btn-sm btn-inverse">View my CV</a>
 										
 									</div>
 									
@@ -183,7 +183,7 @@ header("location:../");
 										<li  class="active">
 											<a href="./"><i class="fa fa-user"></i> Profile</a>
 										</li>
-										<li class="">
+										<!-- <li class="">
 										<a href="change-password.php"><i class="fa fa-key"></i> Change Password</a>
 										</li>
 										<li>
@@ -210,7 +210,7 @@ header("location:../");
 										</li>
 										<li>
 											<a href="applied-jobs.php"><i class="fa fa-bookmark"></i> Applied Jobs</a>
-										</li>
+										</li> -->
 										<li>
 											<a href="../logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 										</li>

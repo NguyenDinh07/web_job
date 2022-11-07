@@ -172,6 +172,10 @@ ul.nav-mini.sign-in {
     /* them margin-left */
 }
 
+.mr-212 {
+    margin-right: -212% !important;
+}
+
 ul.nav-mini.sign-in li:after {
     display: none;
 }
