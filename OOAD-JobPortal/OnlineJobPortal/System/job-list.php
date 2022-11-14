@@ -82,6 +82,7 @@ $title = "Job List";
 	<link rel="stylesheet" href="icons/flaticon-ventures/flaticon-ventures.css">
 
 	<link href="css/style.css" rel="stylesheet">
+	<link href="../css/style.css?v=<?php echo time(); ?>" rel="stylesheet">
 
 
 	
@@ -203,13 +204,23 @@ $title = "Job List";
 					<form action="job-list.php" method="GET" autocomplete="off">
 					
 						<div class="second-search-result-inner">
-							<span class="labeling">Search a job</span>
+							<!-- <span class="labeling">Search a job</span> -->
+							<h1>Find your dream Job</h1>
+							<div class="row" style = "margin-bottom: 15px"> 
+								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-10"  >
+									
+										<input type="text" placeholder = "Your desired job, position..." style = "min-width: 100%; padding: 6px 12px; border: 1px solid #000; border-radius: 3px  "> </input>
+									
+								</div>		 
+							</div>
+
 							<div class="row">
+
 							
 								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-5">
 									<div class="form-group form-lg">
-										<select class="form-control" name="category" required/>
-										<option value="">-Select category-</option>
+										<select class="form-control" name="category" required>
+										<option value="">Select category</option>
 										 <?php
 										 require 'constants/db_config.php';
 										 try {
@@ -245,7 +256,7 @@ $title = "Job List";
 								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-5">
 									<div class="form-group form-lg">
 										<select class="form-control" name="country" required/>
-										<option value="">-Select country-</option>
+										<option value="">Select city</option>
 										 <?php
 										 require 'constants/db_config.php';
 										 try {
@@ -283,6 +294,38 @@ $title = "Job List";
 								</div>
 							
 							</div>
+
+							<div class="row">
+							
+								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-5">
+									<div class="form-group form-lg">
+										<select class="form-control" name="category" required>
+										<option value="">Select forms of employment</option>
+										<option value="Full-time" data-content="<span class='label label-warning'>Full-time</span>">Full-time</option>
+															<option value="Part-time" data-content="<span class='label label-danger'>Part-time</span>">Part-time</option>
+															<option value="Freelance" data-content="<span class='label label-success'>Freelance</span>">Freelance</option>
+										</select>
+									</div>
+								</div>
+								
+								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-5">
+									<div class="form-group form-lg">
+										<select class="form-control" name="country" required>
+										<option value="">Select Job experience</option>
+										<option value="1 Years">1 Year</option>
+															<option value="2 Years">2 Years</option>
+															<option value="3 Years">3 Years</option>
+															<option value="4 Years">4 Years</option>
+															<option value="5 Years">5 Years</option>
+										</select>
+									</div>
+								</div>
+								
+							
+							</div>
+
+
+
 						</div>
 					
 					</form>

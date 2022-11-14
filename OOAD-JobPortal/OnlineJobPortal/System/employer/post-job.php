@@ -20,7 +20,7 @@ header("location:../");
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Nightingale Jobs - Post Job</title>
+	<title>timkiemvieclam - Post Recruitment</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -33,7 +33,7 @@ header("location:../");
     <meta property="og:image:alt" content="Nightingale Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="../images/ico/favicon.png">
+	<link rel="shortcut icon" href="../images/findjobtransnoname.png">
 
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="../css/animate.css" rel="stylesheet">
@@ -54,7 +54,7 @@ header("location:../");
 	<link rel="stylesheet" href="../icons/flaticon-ventures/flaticon-ventures.css">
 
 	<link href="../css/style.css" rel="stylesheet">
-
+	<link href="../css/style.css?v=<?php echo time(); ?>" rel="stylesheet">
 	
 </head>
 
@@ -64,59 +64,59 @@ header("location:../");
 	<div class="container-wrapper">
 
 		<header id="header">
-			<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
 
-				<div class="container">
-					
-					<div class="logo-wrapper">
-						<div class="logo">
-							<a href="../"><img src="../images/logo.png" alt="Logo" /></a>
-						</div>
-					</div>
-					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
-					
-						<ul class="nav navbar-nav" id="responsive-menu">
-						
-							<li>
-							
-								<a href="../">Home</a>
-								
-							</li>
-							
-							<li>
-								<a href="../job-list.php">Job List</a>
+<div class="container">
+	
+	<div class="logo-wrapper">
+		<div class="logo">
+			<a href="./">
+				<img class="max-width-30" src="../images/findjobtransnoname.png"  alt="logo">
+			</a>
+		</div>
+	</div>
+	
+	<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+	
+		<ul class="nav navbar-nav" id="responsive-menu">
+			<!-- 						
+			<li>
+			
+				<a href="./">HOME</a>
+				
+			</li> -->
+			
+			<li>
+				<a href="../job-list.php">FIND JOBS</a>
 
-							</li>
-							
-							<li>
-								<a href="../employers.php">Employers</a>
-							</li>
-							
-							<li>
-								<a href="../employees.php">Employees</a>
-							</li>
-							
-							<li>
-								<a href="../contact.php">Contact Us</a>
-							</li>
+			</li>
+			
+			<li>
+				<a href="../employers.php">COMPANIES</a>
+			</li>
+		
+			
+			<li>
+				<a href="../contact.php">FEED BACK</a>
+			</li>
 
-						</ul>
-				
-					</div>
+		</ul>
 
-					<div class="nav-mini-wrapper">
-						<ul class="nav-mini sign-in">
-							<li><a href="../logout.php">logout</a></li>
-							<li><a href="./">Profile</a></li>
-						</ul>
-					</div>
-				
-				</div>
-				
-				<div id="slicknav-mobile"></div>
-				
-			</nav>
+	</div>
+
+	<div class="nav-mini-wrapper">
+		<ul class="nav-mini sign-in"> <!-- xoa nav-mini -->
+			<li><a href="../logout.php">Logout</a></li>
+			<li><a href="./">Profile</a></li>
+			<li><a href="post-job.php">Post a job</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="slicknav-mobile"></div>
+
+</nav>
 
 			
 		</header>
@@ -130,7 +130,7 @@ header("location:../");
 					<ol class="breadcrumb-list booking-step">
 						<li><a href="../">Home</a></li>
 						<li><a ><?php echo "$compname"; ?></a></li>
-						<li><span>Post a Job</span></li>
+						<li><span>Post a Recruitment</span></li>
 					</ol>
 					
 				</div>
@@ -144,9 +144,9 @@ header("location:../");
 				
 					<div class="row">
 						
-							<div class="col-sm-5 col-md-4">
+							<div class="col-sm-5 col-md-3">
 							
-								<div class="company-detail-sidebar">
+								<!-- <div class="company-detail-sidebar">
 									
 									<div class="image">
 										<?php 
@@ -189,19 +189,19 @@ header("location:../");
 									
 									<a href="./" class="btn btn-primary mt-5"><i class="fa fa-pencil-square-o mr-5"></i>Edit</a>
 									
-								</div>
+								</div> -->
 					
 					
 							</div>
 							
-							<div class="col-sm-7 col-md-8">
+							<div class="col-sm-1 col-md-8">
 							
 								<div class="company-detail-wrapper">
 
 									<div class="company-detail-company-overview  mt-0 clearfix">
 										
 										<div class="section-title-02">
-											<h3 class="text-left">Post a Job</h3>
+											<h3 class="text-left">Post a Recruitment</h3>
 										</div>
 
 										<form class="post-form-wrapper" action="app/post-job.php" method="POST" autocomplete="off">
@@ -223,7 +223,7 @@ header("location:../");
 												<div class="col-sm-4 col-md-4">
 												
 													<div class="form-group">
-														<label>City</label>
+														<label>District</label>
 														<input name="city" required type="text" class="form-control" placeholder="Enter city">
 													</div>
 													
@@ -232,7 +232,7 @@ header("location:../");
 												<div class="col-sm-4 col-md-4">
 												
 													<div class="form-group">
-														<label>Country</label>
+														<label>City</label>
 														<select name="country" required class="selectpicker show-tick form-control" data-live-search="true">
 															<option disabled value="">Select</option>
 						                                   <?php
@@ -305,8 +305,8 @@ header("location:../");
 											    <div class="col-sm-4 col-md-4">
 												
 													<div class="form-group">
-														<label>Closing Date</label>
-														<input name="deadline" required type="text" class="form-control" placeholder="Eg: 30/12/2018">
+														<label>Expired Date</label>
+														<input name="deadline" required type="text" class="form-control" placeholder="Eg: 01/01/2023">
 													</div>
 													
 												</div>
@@ -316,9 +316,9 @@ header("location:../");
 												<div class="col-xss-12 col-xs-6 col-sm-6 col-md-4">
 												
 													<div class="form-group mb-20">
-														<label>Job Type:</label>
+														<label>forms of employment:</label>
 														<select name="jobtype" required class="selectpicker show-tick form-control" data-live-search="false" data-selected-text-format="count > 3" data-done-button="true" data-done-button-text="OK" data-none-selected-text="All">
-															<option value="" selected>Select</option>
+															
 															<option value="Full-time" data-content="<span class='label label-warning'>Full-time</span>">Full-time</option>
 															<option value="Part-time" data-content="<span class='label label-danger'>Part-time</span>">Part-time</option>
 															<option value="Freelance" data-content="<span class='label label-success'>Freelance</span>">Freelance</option>
@@ -332,8 +332,8 @@ header("location:../");
 													<div class="form-group mb-20">
 														<label>Experience:</label>
 														<select name="experience" required class="selectpicker show-tick form-control" data-live-search="false" data-selected-text-format="count > 3" data-done-button="true" data-done-button-text="OK" data-none-selected-text="All">
-															<option value="" selected >Select</option>
-															<option value="Expert">Expert</option>
+													
+															<option value="1 Years">1 Year</option>
 															<option value="2 Years">2 Years</option>
 															<option value="3 Years">3 Years</option>
 															<option value="4 Years">4 Years</option>
@@ -348,14 +348,14 @@ header("location:../");
 												
 												<div class="col-sm-12 col-md-12">
 												
-													<div class="form-group bootstrap3-wysihtml5-wrapper">
+													<div class="">
 														<label>Job Description</label>
-														<textarea class="form-control bootstrap3-wysihtml5" name="description" required placeholder="Enter description ..." style="height: 200px;"></textarea>
+														<textarea class="form-control" name="description" required placeholder="Enter description ..." style="height: 200px;"></textarea>
 													</div>
 													
 												</div>
 												
-												<div class="clear"></div>
+												<!-- <div class="clear"></div>
 												
 												<div class="col-sm-12 col-md-12">
 												
@@ -375,7 +375,7 @@ header("location:../");
 														<textarea name="requirements" required class="form-control bootstrap3-wysihtml5" placeholder="Enter requirements..." style="height: 200px;"></textarea>
 													</div>
 													
-												</div>
+												</div> -->
 												
 												<div class="clear"></div>
 												
@@ -394,7 +394,7 @@ header("location:../");
 												<div class="clear"></div>
 												
 												<div class="col-sm-6 mt-30">
-													<button type="submit"  onclick = "validate(this)" class="btn btn-primary btn-lg">Post Your Job</button>
+													<button type="submit"  onclick = "validate(this)" class="btn btn-primary btn-lg">Post Your Recruitment</button>
 												</div>
 
 											</div>
@@ -420,99 +420,107 @@ header("location:../");
 
 			<footer class="footer-wrapper">
 			
-				<div class="main-footer">
+			<div class="main-footer">
+			
+				<div class="container">
 				
-					<div class="container">
+					<div class="col-sm-1 col-md-6">
 					
-						<div class="row">
+						<div class="col-sm-12 col-md-15">
 						
-							<div class="col-sm-12 col-md-9">
+							<div class="row">
 							
-								<div class="row">
+								<div class="col-sm-8 col-md-8">
 								
-									<div class="col-sm-6 col-md-4">
-									
-										<div class="footer-about-us">
-											<h5 class="footer-title">About Nightingale Jobs</h5>
-											<p>Nightingale Jobs is a job portal, online job management system developed by Nathaniel Nkrumah for his project in february 2018.</p>
-										
-										</div>
-
-									</div>
-									
-									<div class="col-sm-6 col-md-5 mt-30-xs">
-										<h5 class="footer-title">Quick Links</h5>
-										<ul class="footer-menu clearfix">
-											<li><a href="../">Home</a></li>
-											<li><a href="../job-list.php">Job List</a></li>
-											<li><a href="../employers.php">Employers</a></li>
-											<li><a href="../employees.php">Employees</a></li>
-											<li><a href="../contact.php">Contact Us</a></li>
-											<li><a href="#">Go to top</a></li>
-
-										</ul>
+									<div class="footer-about-us">
+										<h5 class="footer-title">About Us</h5>
+										<img src="../images\findjobtransnoname.png" class="max-width-30" alt="">
+										<p></p>
 									
 									</div>
 
 								</div>
+								
+								<!-- <div class="col-sm-6 col-md-5 mt-30-xs">
+									<h5 class="footer-title">Quick Links</h5>
+									<ul class="footer-menu clearfix">
+										<li><a href="./">Home</a></li>
+										<li><a href="job-list.php">Job List</a></li>
+										<li><a href="employers.php">Employers</a></li>
+										<li><a href="employees.php">Employees</a></li>
+										<li><a href="contact.php">Contact Us</a></li>
+										<li><a href="#">Go to top</a></li>
+
+									</ul>
+								
+								</div> -->
 
 							</div>
-							
-							<div class="col-sm-12 col-md-3 mt-30-sm">
-							
-							<h5 class="footer-title">Nightingale Jobs Contact</h5>
-								
-								<p>Address : Takoradi, School Junction PO.BOX AX40</p>
-								<p>Email : <a href="mailto:nightingale.nath2@gmail.com">nightingale.nath2@gmail.com</a></p>
-								<p>Phone : <a href="tel:+233546607474">+233 546 607 474</a></p>
-								
 
-							</div>
-
-							
 						</div>
 						
+						<div class="col-sm-10 col-md-8 mt-30-sm">
+						
+							<h5 class="footer-title">Contact</h5>
+							
+							<p>Address : Hanoi-University of Engineering and Technology</p>
+							<p>Email : <a href="">nani@gmail.com</a></p>
+							<p>Phone : <a href="">+84 837388348</a></p>
+							
+
+						</div>
+
+					
+					</div>
+
+					<div class="col-sm-1 col-md-6"> 
+						<img class="img-map" src="../images/UET-address-map.png" alt="">
 					</div>
 					
 				</div>
-				
-				<div class="bottom-footer">
-				
-					<div class="container">
-					
-						<div class="row">
-						
-							<div class="col-sm-4 col-md-4">
-					
-							
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Nightingale Vision Software</p>
-								
-							</div>
-							
-							<div class="col-sm-4 col-md-4">
-							
-								<ul class="bottom-footer-menu">
-									<li><a >Developed by Nathaniel Nkrumah</a></li>
-								</ul>
-							
-							</div>
-							
-							<div class="col-sm-4 col-md-4">
-								<ul class="bottom-footer-menu for-social">
-									<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
-									<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
-									<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
-								</ul>
-							</div>
-						
+				<div class="copyr">
+					<p>Copyright by Group 6 2223I_INT3110E_41</p>
+				</div>	
+				<div class="social-cov" >
+							<ul class="bottom-footer-menu for-social margin-auto-lr">
+								<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
+								<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
+								<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
+							</ul>
 						</div>
-
-					</div>
 					
-				</div>
+			</div>
 			
-			</footer>
+			<!-- <div class="bottom-footer">
+			
+				<div class="container">
+				
+					<div class="row">
+					
+						<div class="col-sm-4 col-md-4">
+				
+							<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Nightingale Vision Software</p>
+							
+						</div>
+						
+						
+						
+						<div class="col-sm-10 col-md-8">
+							<ul class="bottom-footer-menu for-social">
+								<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
+								<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
+								<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
+							</ul>
+						</div>
+					
+					</div>
+
+				</div> -->
+				
+			</div>
 		
+		</footer>
+
 	</div>
 
 <div id="back-to-top">

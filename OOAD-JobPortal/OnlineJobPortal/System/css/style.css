@@ -1824,6 +1824,8 @@ ul.ticker-list li a:hover:after {
     padding: 10px 0;
     background: #F5F5F5;
     border-bottom: 1px solid #E6E6E6;
+    margin-top: 1px;
+    height: 40px;
 }
 
 ol.breadcrumb-list li {
@@ -5396,7 +5398,6 @@ ul.admin-user-menu li.active a {
 .admin-section-title h2 {
     line-height: 1.2;
     margin-bottom: 15px;
-    text-transform: lowercase;
     font-size: 34px;
     color: #656565;
 }
