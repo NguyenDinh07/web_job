@@ -2527,8 +2527,10 @@ label {
 }
 
 .form-control {
+    color: #1e1e1f;
     border-radius: 3px;
-    border-color: #CCC;
+    border-color: #000000;
+    background-color: white;
     font-weight: 400;
     height: 36px;
     font-size: 15px;

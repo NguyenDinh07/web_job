@@ -4,6 +4,8 @@
 include 'constants/settings.php'; 
 include 'constants/check-login.php';
 ?>
+
+<link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet">
 <head>
 
 	<meta charset="utf-8">
@@ -244,8 +246,8 @@ include 'constants/check-login.php';
 			</div>
 			
 			<div class="modal-footer text-center">
-												<button type="submit" class="btn btn-primary" style="color: black !important; font-weight: 600 !important;">Login</button>
-											</div>
+				<button type="submit" class="btn btn-primary" style="color: black !important; font-weight: 600 !important;">Login</button>
+			</div>
 	
 </form>
 	</div>				

@@ -172,6 +172,10 @@ ul.nav-mini.sign-in {
     /* them margin-left */
 }
 
+.mr-212 {
+    margin-right: -212% !important;
+}
+
 ul.nav-mini.sign-in li:after {
     display: none;
 }
@@ -3986,6 +3990,10 @@ ul.meta-list li span {
     display: block;
 }
 
+.mt-5 {
+    margin-top: 5px;
+    color: black !important;
+}
 
 /**
  * Employer
@@ -5882,20 +5890,116 @@ ul.static-page-menu li.active a {
  * Login and Register
  */
 
-.login-box-wrapper .modal-header,
-.login-box-wrapper .modal-footer {
-    background: #EEE;
+.box-register 
+{
+    font-size: 18px;
+	width: 453px;
+	height: 580px;
+	background-color: #1c1c1c;
+	border-radius: 8px;
+	border: 2px #45f3ff;
+	border-style: solid;
+}
+
+.box-register span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 9px 11px 6px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+.input-wrapper input:valid ~ span,
+.input-wrapper input:focus ~ span
+{
+    color: #45f3ff;
+    transform: translateX(-5px) translateY(-30px);
+	font-size: 0.75em;
+    background-color: #1c1c1c;
+    background: transparent;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    border: none;
+    outline: none;
+}
+
+.form-control_register {
+    position: relative;
+    color: #23242a;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    font-weight: 400;
+    height: 38px;
+    font-size: 16px;
+    width: 100%;
+    padding-left: 12px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    z-index: 10;
+    line-height: 20px;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #45f3ff;
+    width: 96%;
+    height: 2px;
+    transform: translateY(-27px);
+    margin-left: 5px;
+    margin-right: -5px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.input-wrapper input:valid ~ i,
+.input-wrapper input:focus ~ i
+{
+    height: 37px;
+}
+
+.box-register .modal-header
+{
+    border-bottom: 1px solid #45f3ff;
+    margin-top: 8px;
+    padding-bottom: 21px;
+    margin-bottom: 15px;
+}
+
+.box-register .modal-footer {
+    border-top: 1px solid #45f3ff;
+}
+
+.sign-in_by-register p {
+    margin-top: 10px;
 }
 
 .login-box-wrapper .modal-body {
     padding: 25px 25px 20px;
 }
 
-.login-box-wrapper .modal-title {
+.box-register .modal-title {
     line-height: 1;
     margin: 0;
-    text-transform: lowercase;
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #45f3ff;
+    font-size: 20px;
+}
+
+.remember {
+    margin-left: 20px;
 }
 
 .login-modal-or {
