@@ -19,19 +19,10 @@
 												
 <div class="col-sm-12 col-md-12">
 
-<<<<<<< HEAD
-<!-- <div class="form-group">  -->
-<div class="inputBox">
-<!-- <label>Full Name</label> -->
-<!-- <input class="form-control" placeholder="Enter your full name" name="fname" required type="text">  -->
-<input  name="fname" required type="text">
-<span>Full name</span>
-=======
 <div class="input-wrapper"> 
 <input class="form-control_register" type="text" name="fname" required="required"> 
 <span>FullName</span>
 <i></i>
->>>>>>> pr/2
 </div>
 												
 </div>
